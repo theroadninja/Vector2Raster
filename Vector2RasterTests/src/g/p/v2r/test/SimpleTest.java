@@ -1,5 +1,8 @@
 package g.p.v2r.test;
 
+import java.io.StringReader;
+
+import v2r.VectorReader;
 import android.test.AndroidTestCase;
 
 public class SimpleTest extends AndroidTestCase {
@@ -7,5 +10,8 @@ public class SimpleTest extends AndroidTestCase {
 	
 	public void testHappyCase() throws Exception {
 		
+		
+		VectorReader reader = new VectorReader();
+		reader.read(new StringReader("<svg>"));
 	}
 }
