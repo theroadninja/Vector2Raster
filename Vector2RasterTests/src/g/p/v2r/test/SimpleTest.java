@@ -12,6 +12,6 @@ public class SimpleTest extends AndroidTestCase {
 		
 		
 		VectorReader reader = new VectorReader();
-		reader.read(new StringReader("<svg>"));
+		reader.read(this.getContext(), R.raw.test1);
 	}
 }
